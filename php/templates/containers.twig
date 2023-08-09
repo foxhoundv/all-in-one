@@ -485,7 +485,7 @@
                                         {% endif %}
 
                                         <h3>Back up additional directories and docker volumes of your host</h3>
-                                        Below, you can enter directories and docker volumes of your host that will backed up additionally into the same borg backup archive.<br><br>
+                                        Below, you can enter directories and docker volumes of your host that will be backed up additionally into the same borg backup archive.<br><br>
                                         <form method="POST" action="/api/configuration" class="xhr">
                                             <textarea id="additional_backup_directories" name="additional_backup_directories" rows="4" cols="50" placeholder="/directory/on/the/host&#10;my_custom_docker_volume">{{ additional_backup_directories }}</textarea>
                                             <input type="hidden" name="{{csrf.keys.name}}" value="{{csrf.name}}">
